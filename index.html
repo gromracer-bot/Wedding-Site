@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sam and Alex - Wedding</title>
+<meta name="description" content="Wedding details and RSVP for Sam and Alex.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f3efe6;
+    --ink: #2b2a26;
+    --muted: #6b675c;
+    --accent: #3f5d4b;
+    --accent-ink: #ffffff;
+    --line: #d9d3c4;
+    --serif: "Cormorant Garamond", Georgia, serif;
+    --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1d1f1c;
+      --ink: #ece7da;
+      --muted: #a9a595;
+      --accent: #9dbba8;
+      --accent-ink: #1d1f1c;
+      --line: #35382f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 20px 16px;
+    border-bottom: 1px solid var(--line);
+    font-size: 15px;
+  }
+  nav a { text-decoration: none; color: var(--muted); }
+  nav a:hover { color: var(--ink); }
+
+  .hero {
+    text-align: center;
+    padding: 96px 20px 80px;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(3rem, 11vw, 6.5rem);
+    line-height: 1;
+    margin: 0 0 24px;
+    letter-spacing: -0.01em;
+  }
+  .hero p {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.5rem;
+    margin: 0 0 36px;
+    color: var(--muted);
+  }
+  .button {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 14px 34px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .button:hover { filter: brightness(1.1); }
+
+  main { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0 0 20px;
+  }
+  dl { margin: 0; display: grid; grid-template-columns: 110px 1fr; gap: 14px 20px; }
+  dt { color: var(--muted); }
+  dd { margin: 0; }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin-bottom: 10px; }
+
+  .rsvp { text-align: center; }
+  .rsvp p { max-width: 46ch; margin: 0 auto 28px; }
+
+  footer {
+    text-align: center;
+    padding: 40px 20px 56px;
+    color: var(--muted);
+    font-size: 15px;
+    border-top: 1px solid var(--line);
+  }
+  @media (max-width: 520px) {
+    dl { grid-template-columns: 1fr; gap: 2px; }
+    dd { margin-bottom: 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <a href="#details">Details</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#travel">Travel</a>
+  <a href="#rsvp">RSVP</a>
+</nav>
+
+<header class="hero">
+  <h1>Sam and Alex</h1>
+  <p>are getting married on Saturday 12 June 2027</p>
+  <!-- Replace the URL below with your Tally form link -->
+  <a class="button" href="https://tally.so/r/YOUR_FORM_ID">RSVP now</a>
+</header>
+
+<main>
+  <section id="details">
+    <h2>Details</h2>
+    <dl>
+      <dt>Date</dt><dd>Saturday 12 June 2027</dd>
+      <dt>Ceremony</dt><dd>2:00 PM at St Mary's Church, High Street, Town, AB1 2CD</dd>
+      <dt>Reception</dt><dd>The Old Barn, Mill Lane, Town, AB3 4EF</dd>
+      <dt>Dress code</dt><dd>Smart formal</dd>
+    </dl>
+  </section>
+
+  <section id="schedule">
+    <h2>Schedule</h2>
+    <dl>
+      <dt>1:30 PM</dt><dd>Guests arrive</dd>
+      <dt>2:00 PM</dt><dd>Ceremony</dd>
+      <dt>3:30 PM</dt><dd>Drinks and photographs</dd>
+      <dt>5:30 PM</dt><dd>Wedding breakfast</dd>
+      <dt>8:00 PM</dt><dd>Evening guests arrive, first dance</dd>
+      <dt>12:00 AM</dt><dd>Carriages</dd>
+    </dl>
+  </section>
+
+  <section id="travel">
+    <h2>Travel and stay</h2>
+    <ul>
+      <li>Nearest station: Town Central, 10 minutes by taxi from both venues.</li>
+      <li>Parking is available at the reception venue.</li>
+      <li>We have reserved rooms at The Town Inn. Quote "Sam and Alex wedding" when booking.</li>
+    </ul>
+  </section>
+
+  <section id="rsvp" class="rsvp">
+    <h2>RSVP</h2>
+    <p>Please reply by 1 April 2027 and let us know about any dietary requirements.</p>
+    <a class="button" href="https://tally.so/r/YOUR_FORM_ID">Open the RSVP form</a>
+  </section>
+</main>
+
+<footer>
+  Questions? Email us at hello@example.com
+</footer>
+
+</body>
+</html>
